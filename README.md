@@ -387,3 +387,47 @@ Date:   Fri Feb 28 11:11:35 2025 +0200
 ```
 
 ### Part 3
+
+```bash
+user@_26026 MINGW64 ~/Desktop/GIT-EXERCISE/Git_Advanced (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+user@_26026 MINGW64 ~/Desktop/GIT-EXERCISE/Git_Advanced (main)
+$ git rebase -i HEAD~3
+[detached HEAD 8fea62a] Save changes before rebasing
+ Date: Fri Feb 28 11:11:35 2025 +0200
+ 1 file changed, 387 insertions(+), 1 deletion(-)
+Successfully rebased and updated refs/heads/main.
+
+user@_26026 MINGW64 ~/Desktop/GIT-EXERCISE/Git_Advanced (main)
+$ git status
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 2 and 3 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+nothing to commit, working tree clean
+
+user@_26026 MINGW64 ~/Desktop/GIT-EXERCISE/Git_Advanced (main)
+$ git add .
+
+user@_26026 MINGW64 ~/Desktop/GIT-EXERCISE/Git_Advanced (main)
+$ git rebase --continue
+fatal: no rebase in progress
+
+user@_26026 MINGW64 ~/Desktop/GIT-EXERCISE/Git_Advanced (main)
+$ git push origin main --force
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 2.30 KiB | 1.15 MiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+To github.com:Jess-xca/Git_Advanced.git
+ + 3b12e48...1653cda main -> main (forced update)
+```
