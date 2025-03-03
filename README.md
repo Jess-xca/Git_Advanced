@@ -1,6 +1,6 @@
 # Git_Advanced
 
-## Part 1
+## Ex 1
 
 ```bash
 user@\_26026 MINGW64 ~/Desktop/GIT-EXERCISE/Git_Advanced (main)
@@ -127,7 +127,7 @@ Your branch is up to date with 'origin/main'.
 nothing to commit, working tree clean
 ```
 
-### Part 2
+### Ex 2
 
 ```bash
 user@\_26026 MINGW64 ~/Desktop/GIT-EXERCISE/Git_Advanced
@@ -202,36 +202,6 @@ Successfully rebased and updated refs/heads/main.
 ```
 
 ```bash
-user@\_26026 MINGW64 ~/Desktop/GIT-EXERCISE/Git_Advanced
-(main)
-$ git rebase -i HEAD~2
-Successfully rebased and updated refs/heads/main.
-```
-
-```bash
-user@\_26026 MINGW64 ~/Desktop/GIT-EXERCISE/Git_Advanced
-(main)
-$ git rebase -i HEAD~4
-hint: Waiting for your editor to close the file... Vim:
-Error reading input, exiting...
-Vim: Finished.
-
-error: there was a problem with the editor 'vi'
-Please supply the message using either -m or -F option.
-```
-
-```bash
-user@\_26026 MINGW64 ~/Desktop/GIT-EXERCISE/Git_Advanced (main|REBASE 2/4)
-$ git rebase --abort
-```
-
-```bash
-user@\_26026 MINGW64 ~/Desktop/GIT-EXERCISE/Git_Advanced (main)
-$ git rebase --abort
-fatal: no rebase in progress
-```
-
-```bash
 user@\_26026 MINGW64 ~/Desktop/GIT-EXERCISE/Git_Advanced (main)
 $ git rebase -i HEAD~4
 [detached HEAD f7c55f2] chore: Create second file
@@ -241,152 +211,7 @@ create mode 100644 test2.md
 Successfully rebased and updated refs/heads/main.
 ```
 
-```bash
-user@_26026 MINGW64 ~/Desktop/GIT-EXERCISE/Git_Advanced (main)
-$ git log
-commit 319acf0492007338dedd06bfc20adcf893dc5aff (HEAD -> main)
-Author: Jessica Irakoze <jessicairakoze4@gmail.com>
-Date:   Fri Feb 28 11:11:35 2025 +0200
-
-    Save changes before rebasing
-
-commit c7f2ef5bea84171ce3716471467e41f0cce91026
-Author: Jessica Irakoze <jessicairakoze4@gmail.com>
-Date:   Wed Feb 26 12:56:03 2025 +0200
-Date:   Fri Feb 28 11:11:35 2025 +0200
-
-    Save changes before rebasing
-
-commit c7f2ef5bea84171ce3716471467e41f0cce91026
-Author: Jessica Irakoze <jessicairakoze4@gmail.com>
-Date:   Wed Feb 26 12:56:03 2025 +0200
-
-
-
-
-
-
-
-commit 319acf0492007338dedd06bfc20adcf893dc5aff (HEAD
-
-
-
-
-
-
-commit 319acf0492007338dedd06bfc20adcf893dc5aff (HEAD -> main)
-Author: Jessica Irakoze <jessicairakoze4@gmail.com>
-Date:   Fri Feb 28 11:11:35 2025 +0200
-
-    Save changes before rebasing
-
-commit c7f2ef5bea84171ce3716471467e41f0cce91026
-Date:   Fri Feb 28 11:11:35 2025 +0200
-
-    Save changes before rebasing
-
-commit c7f2ef5bea84171ce3716471467e41f0cce91026
-
-
-
-
-
-commit 319acf0492007338dedd06bfc20adcf893dc5aff (HEAD -> main
-
-
-
-
-commit 319acf0492007338dedd06bfc20adcf893dc5aff (HEAD -> main)
-Author: Jessica Irakoze <jessicairakoze4@gmail.com>
-Date:   Fri Feb 28 11:11:35 2025 +0200
-
-    Save changes before rebasing
-Author: Jessica Irakoze <jessicairakoze4@gmail.com>
-Date:   Fri Feb 28 11:11:35 2025 +0200
-
-    Save changes before rebasing
-
-
-
-
-commit 319acf0492007338dedd06bfc20adcf893dc5aff (HEAD -> main)
-Author: Jessica Irakoze <jessicairakoze4@gmail.com>
-Date:   Fri Feb 28 11:11:35 2025 +0200
-
-    Save changes before rebasing
-
-commit c7f2ef5bea84171ce3716471467e41f0cce91026
-Author: Jessica Irakoze <jessicairakoze4@gmail.com>
-
-Author: Jessica Irakoze <jessicairakoze4@gmail.com>
-Date:   Fri Feb 28 11:11:35 2025 +0200
-
-    Save changes before rebasing
-
-
-
-
-commit 319acf0492007338dedd06bfc20adcf893dc5aff (HEAD -> main)
-Author: Jessica Irakoze <jessicairakoze4@gmail.com>
-
-
-
-
-Date:   Fri Feb 28 11:11:35 2025 +0200
-
-Author: Jessica Irakoze <jessicairakoze4@gmail.com>
-Date:   Fri Feb 28 11:11:35 2025 +0200
-
-
-
-
-commit 319acf0492007338dedd06bfc20adcf893dc5aff (HEAD -> main)
-Author: Jessica Irakoze <jessicairakoze4@gmail.com>
-Date:   Fri Feb 28 11:11:35 2025 +0200
-
-Author: Jessica Irakoze <jessicairakoze4@gmail.com>
-Date:   Fri Feb 28 11:11:35 2025 +0200
-
-
-
-
-commit 319acf0492007338dedd06bfc20adcf893dc5aff (HEAD -> main)
-Author: Jessica Irakoze <jessicairakoze4@gmail.com>
-Date:   Fri Feb 28 11:11:35 2025 +0200
-Author: Jessica Irakoze <jessicairakoze4@gmail.com>
-Date:   Fri Feb 28 11:11:35 2025 +0200
-
-
-commit 319acf0492007338dedd06bfc20adcf893dc5aff (HEAD -> main)
-Author: Jessica Irakoze <jessicairakoze4@gmail.com>
-Date:   Fri Feb 28 11:11:35 2025 +0200
-Author: Jessica Irakoze <jessicairakoze4@gmail.com>
-Date:   Fri Feb 28 11:11:35 2025 +0200
-
-
-commit 319acf0492007338dedd06bfc20adcf893dc5aff (HEAD -> main)
-Author: Jessica Irakoze <jessicairakoze4@gmail.com>
-Date:   Fri Feb 28 11:11:35 2025 +0200
-
-
-Author: Jessica Irakoze <jessicairakoze4@gmail.com>
-Date:   Fri Feb 28 11:11:35 2025 +0200
-
-
-commit 319acf0492007338dedd06bfc20adcf893dc5aff (HEAD -> main
-
-commit 319acf0492007338dedd06bfc20adcf893dc5aff (HEAD -> main
-commit 319acf0492007338dedd06bfc20adcf893dc5aff (HEAD -> main)
-Author: Jessica Irakoze <jessicairakoze4@gmail.com>
-Date:   Fri Feb 28 11:11:35 2025 +0200
-commit 319acf0492007338dedd06bfc20adcf893dc5aff (HEAD -> main)
-commit 319acf0492007338dedd06bfc20adcf893dc5aff (HEAD -> main)
-Author: Jessica Irakoze <jessicairakoze4@gmail.com>
-Date:   Fri Feb 28 11:11:35 2025 +0200
-
-```
-
-### Part 3
+### Ex 3
 
 ```bash
 user@_26026 MINGW64 ~/Desktop/GIT-EXERCISE/Git_Advanced (main)
@@ -430,4 +255,69 @@ Total 6 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
 remote: Resolving deltas: 100% (3/3), completed with 1 local object.
 To github.com:Jess-xca/Git_Advanced.git
  + 3b12e48...1653cda main -> main (forced update)
+```
+
+#### Ex 4
+
+```bash
+user@_26026 MINGW64 ~/Desktop/GIT-EXERCISE/Git_Advanced (main)
+$ git reset --soft c7f2ef5^
+
+user@_26026 MINGW64 ~/Desktop/GIT-EXERCISE/Git_Advanced (main)
+$ git add test3.md
+
+user@_26026 MINGW64 ~/Desktop/GIT-EXERCISE/Git_Advanced (main)
+$ git commit -m "Added test3.md"
+[main d06fe77] Added test3.md
+ 3 files changed, 433 insertions(+), 1 deletion(-)
+ create mode 100644 test3.md
+ create mode 100644 test4.md
+
+user@_26026 MINGW64 ~/Desktop/GIT-EXERCISE/Git_Advanced (main)
+$ git add test4.md
+
+user@_26026 MINGW64 ~/Desktop/GIT-EXERCISE/Git_Advanced (main)
+$ git commit -m "Added test4.md"
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 1 and 4 different commits each, respectively.
+
+nothing to commit, working tree clean
+
+user@_26026 MINGW64 ~/Desktop/GIT-EXERCISE/Git_Advanced (main)
+$ git reset --soft c7f2ef5^
+
+user@_26026 MINGW64 ~/Desktop/GIT-EXERCISE/Git_Advanced (main)
+$ git status
+On branch main
+Your branch is behind 'origin/main' by 4 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+        new file:   test3.md
+        new file:   test4.md
+
+
+user@_26026 MINGW64 ~/Desktop/GIT-EXERCISE/Git_Advanced (main)
+$ git add test3.md
+
+user@_26026 MINGW64 ~/Desktop/GIT-EXERCISE/Git_Advanced (main)
+$ git reset test4.md
+
+user@_26026 MINGW64 ~/Desktop/GIT-EXERCISE/Git_Advanced (main)
+$ git commit -m "Added test3.md"
+[main 1932ffb] Added test3.md
+ 2 files changed, 433 insertions(+), 1 deletion(-)
+ create mode 100644 test3.md
+
+user@_26026 MINGW64 ~/Desktop/GIT-EXERCISE/Git_Advanced (main)
+$ git add test4.md
+
+user@_26026 MINGW64 ~/Desktop/GIT-EXERCISE/Git_Advanced (main)
+$ git commit -m "Added test4.md"
+[main 10f4aba] Added test4.md
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test4.md
 ```
